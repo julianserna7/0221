@@ -1,0 +1,320 @@
+/* ==========================================================================
+   RESET GENERAL Y BASE
+   ========================================================================== */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+    padding-top: 80px; /* 80px header + 50px nav */
+}
+
+
+/* ==========================================================================
+   ESTILOS DE ENTRETENIMIENTO (DESKTOP)
+   ========================================================================== */
+.contenedor-deportes {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.titulo-seccion h2 {
+    font-size: 28px;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.titulo-seccion h2::before {
+    content: "•";
+    color: #00A0E0;
+    margin-right: 8px;
+}
+
+.titulo-seccion {
+    border-bottom: 2px solid #333333;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+/* Grilla Principal Superior (Destacado + Sidebar) */
+.bloque-principal {
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.noticia-principal-destacada {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.noticia-principal-destacada img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+}
+
+.gradiente-noticia {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%);
+}
+
+.texto-noticia-principal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    color: white;
+}
+
+.texto-noticia-principal h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.texto-noticia-principal h3 span {
+    color: #29B6F6;
+}
+
+/* Sidebar Últimas Noticias */
+.ultimas-noticias-sidebar h3 {
+    font-size: 15px;
+    color: #00A0E0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.item-ultima {
+    border-bottom: 1px solid #eee;
+    padding: 12px 0 12px 15px;
+    position: relative;
+}
+
+.item-ultima::before {
+    content: "•";
+    color: #00A0E0;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 18px;
+}
+
+.item-ultima .hora {
+    font-size: 11px;
+    color: #888;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.item-ultima p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #222;
+}
+
+/* Bloques Temáticos Comunes (Begum, ¿Qué Hago?, Tecno, General) */
+.bloque-tematico {
+    margin-bottom: 40px;
+}
+
+.encabezado-bloque {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333333;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.encabezado-bloque h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #000;
+}
+
+/* Estilo tipográfico exclusivo de la sub-marca Begum */
+.encabezado-bloque h3.titulo-begum {
+    font-family: 'Georgia', serif;
+    color: #00A896; 
+    font-style: italic;
+    font-weight: 700;
+}
+
+.ver-mas {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+}
+
+/* Sistemas de Grillas Configurables */
+.grilla-noticias-tres {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.grilla-noticias-cuatro {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.tarjeta-noticia {
+    cursor: pointer;
+}
+
+.tarjeta-noticia img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.tarjeta-noticia h4 {
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: 700;
+    color: #111;
+}
+
+.tarjeta-noticia h4 span {
+    color: #00A0E0;
+}
+
+.autor {
+    font-size: 11px;
+    color: #666;
+    margin-top: 6px;
+}
+
+
+
+
+.bloque-clubes, .bloque-general {
+    margin-bottom: 40px;
+}
+
+
+
+/* Etiquetas Reporte Vecinal */
+.etiqueta-reporte {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFD200;
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: center;
+    z-index: 2;
+}
+
+.autor {
+    font-size: 11px;
+    color: #666;
+    margin-top: 5px;
+}
+
+
+
+/* Paginación */
+.paginacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 50px 0 20px 0;
+}
+
+.pag-numero {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    padding: 5px 10px;
+}
+
+.pag-numero.activa {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.pag-puntos {
+    color: #666;
+}
+
+.pag-flecha {
+    background-color: #00A0E0;
+    color: white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 11px;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE (VERSION MOBILE DESDE CAPTURA 5)
+   ========================================================================== */
+@media (max-width: 768px) {
+   
+
+    .contenedor-deportes {
+        padding: 0 15px;
+        margin: 15px auto;
+    }
+
+    /* Bloque Destacado a Columna Única */
+    .bloque-principal {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .noticia-principal-destacada img {
+        height: 280px;
+    }
+
+    .texto-noticia-principal h3 {
+        font-size: 20px;
+    }
+
+    /* Transformación de Grillas a 1 Sola Columna Uniforme */
+    .grilla-noticias-tres, .grilla-noticias-cuatro {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .tarjeta-noticia img {
+        height: 210px; /* Proporción ideal para mobile */
+    }
+
+   
+    .sub-columnas-secciones {
+        justify-content: center; 
+    }
+}
