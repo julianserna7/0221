@@ -25,7 +25,7 @@ const headerHTML = `
       </div>
     </div>
     <div class="header-centro">
-      <img src="/assets/marcas/0221-blanco.svg" alt="Logo 0221" class="logo-sitio">
+      <a href="/home.html" style="text-decoration: none;"><img src="/assets/marcas/0221-blanco.svg" alt="Logo 0221" class="logo-sitio"></a>
     </div>
     <div class="header-der">
       <a href="#" class="btn-ingresar">
