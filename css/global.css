@@ -1,0 +1,408 @@
+/* ==========================================================================
+   RESET GENERAL Y TIPOGRAFÍA
+   ========================================================================== */
+   
+.poppins-regular {   
+    font-family: "Poppins", sans-serif;   
+    font-weight: 400;   
+    font-style: normal; 
+}
+
+.poppins-medium {   
+    font-family: "Poppins", sans-serif;   
+    font-weight: 500;   
+    font-style: normal; 
+}
+
+.poppins-semibold {   
+    font-family: "Poppins", sans-serif;   
+    font-weight: 600;   
+    font-style: normal; 
+}
+
+.poppins-bold {   
+    font-family: "Poppins", sans-serif;   
+    font-weight: 700;   
+    font-style: normal; 
+}
+
+/* ==========================================================================
+   RESET GENERAL
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.header-principal {
+    background-color: #00A0E0;
+    color: #ffffff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ffffff;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-superior {
+    max-width: 1160px;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 12px 0px 12px 0px;
+}
+
+.header-izq {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.linea-hamburguesa {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.info-clima-fecha {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 4px;
+}
+
+.ciudad-clima {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.temperatura {
+    font-weight: 500;
+}
+
+.fecha-actual {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.header-centro {
+    display: flex;
+    justify-content: center;
+}
+
+.logo-sitio {
+    height: 51px;
+    width: auto;
+}
+
+.header-der {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.btn-ingresar {
+    outline: 1px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.btn-ingresar:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icono-usuario-mobile {
+    display: none;
+}
+
+.btn-reportar-top {
+    background-color: #FFD600;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icono-reportar-mobile {
+    display: none;
+}
+
+.icono-reportar-btn {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* ==========================================================================
+   NAV
+   ========================================================================== */
+.nav-secciones {
+    background-color: #00A0E0;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-secciones > ul {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px 0px 12px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-secciones ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.nav-secciones ul li a:hover {
+    opacity: 0.8;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer-sitio {
+    background: linear-gradient(180deg, #00A0E0 0%, #005E88 100%);
+    color: #ffffff;
+    padding: 40px 20px 20px 20px;
+    font-size: 16px;
+}
+
+.footer-bloque-superior {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 30px;
+}
+
+.footer-enlaces-grid {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.columna-enlaces h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+.columna-enlaces ul li {
+    margin-bottom: 8px;
+}
+
+.columna-enlaces ul li a {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.columna-enlaces ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.sub-columnas-secciones {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-marca-redes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    order: 2;
+}
+
+.logo-footer {
+    height: 102px;
+    width: auto;
+    margin-bottom: 24px;
+}
+
+.iconos-redes {
+    display: flex;
+    gap: 16px;
+}
+
+.iconos-redes img {
+    width: 28px;
+    height: 28px;
+}
+
+.footer-logos-institucionales {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    opacity: 0.8;
+}
+
+.img-institucional {
+    height: 25px;
+    width: auto;
+}
+
+.footer-creditos {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 11px;
+    color: #ffffff;
+    line-height: 1.6;
+    border-top: 1px solid #ffffff;
+    padding-top: 15px;
+}
+
+.footer-creditos strong {
+    color: #ffffff;
+}
+
+.copyright {
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+   RESPONSIVE MOBILE — HEADER, NAV Y FOOTER (hasta 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+    /* HEADER MOBILE */
+    .info-clima-fecha {
+        display: none;
+    }
+
+    .nav-secciones {
+        display: none;
+    }
+
+    .texto-ingresar, .texto-reportar {
+        display: none;
+    }
+
+    .icono-usuario-mobile {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+
+    .btn-ingresar {
+        border: none;
+        padding: 0;
+    }
+
+    .btn-reportar-top {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .icono-reportar-mobile {
+        display: inline;
+        font-size: 14px;
+    }
+
+    /* FOOTER MOBILE */
+    .footer-bloque-superior {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-marca-redes {
+        align-items: center;
+        order: -1;
+        width: 100%;
+    }
+
+    .footer-enlaces-grid {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .sub-columnas-secciones {
+        justify-content: center;
+    }
+
+    .columna-enlaces h4 {
+        display: inline-block;
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer-logos-institucionales {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

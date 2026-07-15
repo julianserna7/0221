@@ -1,0 +1,325 @@
+/* ==========================================================================
+   USUARIO.CSS — Estilos para registro.html e iniciar-sesion.html
+   ========================================================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #f5f5f5;
+    color: #333333;
+    overflow-x: hidden;
+    padding-top: 80px;
+}
+
+/* ==========================================================================
+   CONTENEDOR GENERAL DE PÁGINA
+   ========================================================================== */
+.pagina-usuario {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    padding: 48px 15px 60px;
+}
+
+/* ==========================================================================
+   ENCABEZADO DE SECCIÓN (título con bolita celeste)
+   ========================================================================== */
+.encabezado-pagina {
+    max-width: 1160px;
+    margin: 0 auto 40px;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.encabezado-pagina h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.bolita-celeste {
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    border-radius: 50%;
+    border: 2px solid #00A0E0;
+    background-color: transparent;
+}
+
+/* ==========================================================================
+   CONTENEDOR DEL FORMULARIO (centrado)
+   ========================================================================== */
+.contenedor-formulario {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ==========================================================================
+   GRUPOS DE CAMPO
+   ========================================================================== */
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-grupo label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.campo-grupo input,
+.campo-grupo select {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 0 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    background-color: #ffffff;
+    transition: border-color 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.campo-grupo input::placeholder {
+    color: #aaaaaa;
+}
+
+.campo-grupo input:focus,
+.campo-grupo select:focus {
+    outline: none;
+    border-color: #00A0E0;
+}
+
+/* Fila de dos campos al mismo nivel */
+.campo-fila {
+    display: flex;
+    gap: 16px;
+}
+
+.campo-fila .campo-grupo {
+    flex: 1;
+}
+
+/* ==========================================================================
+   SELECT CON FLECHA PERSONALIZADA
+   ========================================================================== */
+.campo-select-wrapper {
+    position: relative;
+}
+
+.campo-select-wrapper select {
+    cursor: pointer;
+    color: #aaaaaa;
+}
+
+.campo-select-wrapper select.seleccionado {
+    color: #333333;
+}
+
+.campo-select-wrapper::after {
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 6px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23666'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   CAMPO CONTRASEÑA (con toggle de visibilidad)
+   ========================================================================== */
+.campo-password {
+    position: relative;
+}
+
+.campo-password input {
+    padding-right: 44px;
+}
+
+.btn-toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.btn-toggle-password img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
+
+/* ==========================================================================
+   LINK "OLVIDASTE TU CONTRASEÑA"
+   ========================================================================== */
+.link-olvide {
+    text-align: right;
+    font-size: 13px;
+    margin-top: -12px;
+}
+
+.link-olvide a {
+    color: #888888;
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   BOTÓN PRINCIPAL
+   ========================================================================== */
+.btn-principal {
+    width: 100%;
+    height: 50px;
+    background-color: #00A0E0;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 4px;
+}
+
+.btn-principal:hover {
+    background-color: #0090cc;
+}
+
+/* ==========================================================================
+   SEPARADOR "Ó"
+   ========================================================================== */
+.separador-o {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+.separador-o::before,
+.separador-o::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #dddddd;
+}
+
+/* ==========================================================================
+   BOTONES SOCIALES (Google / Facebook)
+   ========================================================================== */
+.botones-sociales {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-social {
+    flex: 1;
+    height: 46px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-social:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-social img {
+    width: 20px;
+    height: 20px;
+}
+
+/* ==========================================================================
+   LINK INFERIOR ("¿Ya tenés cuenta?" / "¿No tenés cuenta?")
+   ========================================================================== */
+.link-alternativa {
+    text-align: center;
+    font-size: 14px;
+    color: #555555;
+}
+
+.link-alternativa a {
+    color: #00A0E0;
+    font-weight: 500;
+}
+
+/* ==========================================================================
+   MENSAJES DE ERROR / VALIDACIÓN
+   ========================================================================== */
+.mensaje-error {
+    font-size: 12px;
+    color: #e03030;
+    margin-top: 2px;
+    display: none;
+}
+
+.campo-grupo.con-error input,
+.campo-grupo.con-error select {
+    border-color: #e03030;
+}
+
+.campo-grupo.con-error .mensaje-error {
+    display: block;
+}
+
+/* ==========================================================================
+   RESPONSIVE MOBILE (hasta 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 80px;
+    }
+
+    .pagina-usuario {
+        padding: 32px 15px 48px;
+    }
+
+    .encabezado-pagina h1 {
+        font-size: 24px;
+    }
+
+    .campo-fila {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .botones-sociales {
+        flex-direction: column;
+    }
+}

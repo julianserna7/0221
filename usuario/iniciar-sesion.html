@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - 0221</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/usuario.css">
+    <script src="../js/global.js" defer></script>
+</head>
+<body>
+
+    <header id="header-principal"></header>
+    <nav id="nav-principal"></nav>
+
+    <div class="pagina-usuario">
+
+        <div class="encabezado-pagina">
+            <span class="bolita-celeste"></span>
+            <h1>Iniciar sesión</h1>
+        </div>
+
+        <form class="contenedor-formulario" id="form-login" novalidate>
+
+            <div class="campo-grupo">
+                <label for="login-usuario">Correo electrónico o nombre de usuario*</label>
+                <input type="text" id="login-usuario" name="login-usuario" autocomplete="username">
+            </div>
+
+            <div class="campo-grupo">
+                <label for="login-password">Contraseña*</label>
+                <div class="campo-password">
+                    <input type="password" id="login-password" name="login-password" autocomplete="current-password">
+                    <button type="button" class="btn-toggle-password" aria-label="Mostrar contraseña">
+                        <img src="../assets/iconos/ojo.png" alt="Ver contraseña" id="icono-ojo-login">
+                    </button>
+                </div>
+            </div>
+
+            <p class="link-olvide"><a href="#">¿Olvidaste tu contraseña?</a></p>
+
+            <button type="submit" class="btn-principal">Iniciar sesión</button>
+
+            <div class="separador-o">Ó</div>
+
+            <div class="botones-sociales">
+                <button type="button" class="btn-social">
+                    <img src="../assets/iconos/google.png" alt="Google">
+                    Acceder con Google
+                </button>
+                <button type="button" class="btn-social">
+                    <img src="../assets/iconos/facebook.png" alt="Facebook">
+                    Acceder con Facebook
+                </button>
+            </div>
+
+            <p class="link-alternativa">¿No tenés cuenta? <a href="registro.html">Registrate</a></p>
+
+        </form>
+
+    </div>
+
+    <footer id="footer-sitio"></footer>
+
+    <script>
+        // Toggle visibilidad contraseña (decorativo)
+        const btnOjo = document.querySelector('.btn-toggle-password');
+        const inputPass = document.getElementById('login-password');
+        if (btnOjo && inputPass) {
+            btnOjo.addEventListener('click', () => {
+                inputPass.type = inputPass.type === 'password' ? 'text' : 'password';
+            });
+        }
+    </script>
+
+</body>
+</html>

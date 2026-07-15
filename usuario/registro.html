@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - 0221</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/usuario.css">
+    <script src="../js/global.js" defer></script>
+    <script src="../js/registro.js" defer></script>
+</head>
+<body>
+
+    <header id="header-principal"></header>
+    <nav id="nav-principal"></nav>
+
+    <div class="pagina-usuario">
+
+        <div class="encabezado-pagina">
+            <span class="bolita-celeste"></span>
+            <h1>Registro</h1>
+        </div>
+
+        <form class="contenedor-formulario" id="form-registro" novalidate>
+
+            <div class="campo-grupo" id="grupo-email">
+                <label for="email">Correo electrónico*</label>
+                <input type="email" id="email" name="email" placeholder="mi@email.com" autocomplete="email">
+                <span class="mensaje-error" id="error-email">Ingresá un correo electrónico válido.</span>
+            </div>
+
+            <div class="campo-fila">
+                <div class="campo-grupo" id="grupo-nombre">
+                    <label for="nombre">Nombre(s)*</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="given-name">
+                    <span class="mensaje-error" id="error-nombre">Ingresá tu nombre.</span>
+                </div>
+                <div class="campo-grupo" id="grupo-apellido">
+                    <label for="apellido">Apellido(s)*</label>
+                    <input type="text" id="apellido" name="apellido" autocomplete="family-name">
+                    <span class="mensaje-error" id="error-apellido">Ingresá tu apellido.</span>
+                </div>
+            </div>
+
+            <div class="campo-grupo" id="grupo-usuario">
+                <label for="usuario">Nombre de usuario*</label>
+                <input type="text" id="usuario" name="usuario" autocomplete="username">
+                <span class="mensaje-error" id="error-usuario">Ingresá un nombre de usuario.</span>
+            </div>
+
+            <div class="campo-fila">
+                <div class="campo-grupo" id="grupo-ciudad">
+                    <label for="ciudad">Ciudad de residencia*</label>
+                    <div class="campo-select-wrapper">
+                        <select id="ciudad" name="ciudad">
+                            <option value="" disabled selected>Seleccioná una ciudad</option>
+                            <option value="la-plata">La Plata</option>
+                            <option value="berisso">Berisso</option>
+                            <option value="ensenada">Ensenada</option>
+                        </select>
+                    </div>
+                    <span class="mensaje-error" id="error-ciudad">Seleccioná tu ciudad.</span>
+                </div>
+                <div class="campo-grupo">
+                    <label for="barrio">Barrio/localidad <span style="font-weight:400;">(opcional)</span></label>
+                    <div class="campo-select-wrapper">
+                        <select id="barrio" name="barrio">
+                            <option value="" disabled selected>Escribí tu barrio/localidad...</option>
+                            <option value="city-bell">City Bell</option>
+                            <option value="gonnet">Gonnet</option>
+                            <option value="tolosa">Tolosa</option>
+                            <option value="villa-elisa">Villa Elisa</option>
+                            <option value="manuel-b-gonnet">Manuel B. Gonnet</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="campo-grupo" id="grupo-password">
+                <label for="password">Contraseña*</label>
+                <div class="campo-password">
+                    <input type="password" id="password" name="password" autocomplete="new-password">
+                    <button type="button" class="btn-toggle-password" aria-label="Mostrar contraseña">
+                        <img src="../assets/iconos/ojo.png" alt="Ver contraseña" id="icono-ojo">
+                    </button>
+                </div>
+                <span class="mensaje-error" id="error-password">La contraseña debe tener al menos 6 caracteres.</span>
+            </div>
+
+            <button type="submit" class="btn-principal">Registrarme</button>
+
+            <div class="separador-o">Ó</div>
+
+            <div class="botones-sociales">
+                <button type="button" class="btn-social">
+                    <img src="../assets/iconos/google.png" alt="Google">
+                    Registrarse con Google
+                </button>
+                <button type="button" class="btn-social">
+                    <img src="../assets/iconos/facebook.png" alt="Facebook">
+                    Registrarse con Facebook
+                </button>
+            </div>
+
+            <p class="link-alternativa">¿Ya tenés una cuenta? <a href="iniciar-sesion.html">Iniciar sesión</a></p>
+
+        </form>
+
+    </div>
+
+    <footer id="footer-sitio"></footer>
+
+</body>
+</html>

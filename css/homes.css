@@ -1,0 +1,530 @@
+/* ==========================================================================
+   HOME — Estilos de contenido de la página de inicio
+   ========================================================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #000000;
+    overflow-x: hidden;
+    padding-top: 80px; /* 80px header + 50px nav */
+}
+
+/* Color destacado global para etiquetas de títulos */
+.etiqueta-azul, .destacado-azul {
+    color: #00A0E0;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   VERSION DESKTOP
+   ========================================================================== */
+
+/* CONTENEDOR ANCHO GENERAL */
+.contenedor-principal {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+/* MARQUESINA */
+.marquesina-temas {
+    background-color: #ffffff;
+    border-bottom: 1px solid #D8D8CD;
+    border-top: 1px solid #D8D8CD;
+    padding: 6px 0;
+    margin-bottom: 24px;
+}
+
+.marquesina-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    font-size: 14px;
+}
+
+.titulo-temas {
+    font-weight: 500;
+    color: #000000;
+}
+
+.marquesina-contenido a {
+    color: #000000;
+    font-weight: 400;
+}
+
+.marquesina-contenido a:hover {
+    color: #00A0E0;
+}
+
+/* 1. CARRUSEL DESTACADO */
+.seccion-carrusel {
+    margin-bottom: 30px;
+}
+
+.tarjeta-carrusel {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.img-carrusel {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.flecha-carrusel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+}
+
+.flecha-carrusel img {
+    width: 35px;
+    height: 35px;
+}
+
+.flecha-izq {
+    left: 15px;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.flecha-der {
+    right: 15px;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.info-carrusel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    padding: 30% 20px 25px 20px;
+    color: #ffffff;
+}
+
+.info-carrusel h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.indicadores-carrusel {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.punto {
+    width: 8px;
+    height: 8px;
+    background-color: #cccccc;
+    border-radius: 50%;
+}
+
+.punto.activo {
+    background-color: #00A0E0;
+}
+
+/* 2. REPORTES VECINALES */
+.seccion-reportes-vecinales {
+    background-color: #CCECF9;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.encabezado-bloque-reportes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.encabezado-bloque-reportes h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.acciones-reportes {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-reportar-celeste {
+    background-color: #FFD600;
+    color: #000000;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.link-ver-mas {
+    font-size: 12px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.grilla-reportes {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta-reporte {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta-reporte img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.cuerpo-reporte {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.tarjeta-reporte h3 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.autor-reporte {
+    font-size: 11px;
+    color: #666666;
+}
+
+/* 3. SECCIÓN MIXTA */
+.contenedor-columnas-mixtas {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.columna-noticias-izquierda {
+    flex: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.bloque-dos-noticias {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.noticia-chica-horizontal {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.noticia-chica-horizontal img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.info-noticia-chica h3 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+.noticia-protesta-principal {
+    flex: 1.5;
+    background-color: #ffffff;
+}
+
+.noticia-protesta-principal img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cuerpo-noticia-protesta h2 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 12px 0 8px 0;
+    line-height: 1.3;
+}
+
+.bajada-noticia {
+    font-size: 12px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+/* COLUMNA LATERAL: ÚLTIMAS NOTICIAS */
+.columna-ultimas-noticias {
+    flex: 1;
+    border-left: 1px solid #e0e0e0;
+    padding-left: 20px;
+}
+
+.titulo-ultimas {
+    font-size: 15px;
+    font-weight: 700;
+    color: #00A0E0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.lista-cronologica {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-cronologico {
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-left: 1px solid #CCECF9;
+}
+
+.item-cronologico::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 4px;
+    width: 9px;
+    height: 9px;
+    background-color: #00A0E0;
+    border-radius: 50%;
+}
+
+.hora-noticia {
+    font-size: 11px;
+    font-weight: 700;
+    color: #888888;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.item-cronologico p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #333333;
+}
+
+/* 4. GRILLA DE CUATRO NOTICIAS */
+.fila-cuatro-noticias {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.tarjeta-cuadrada {
+    flex: 1;
+}
+
+.tarjeta-cuadrada img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.tarjeta-cuadrada h3 {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* 5. BANNER GRANDE OSCURO */
+.seccion-banner-ancho {
+    margin-bottom: 30px;
+}
+
+.tarjeta-banner-oscuro {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.img-banner-fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido-banner-oscuro {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    padding: 30px 20px;
+    color: #ffffff;
+}
+
+.contenido-banner-oscuro h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* 7. MÁS RECIENTES */
+.seccion-mas-recientes {
+    margin-bottom: 40px;
+    border-top: 2px solid #333333;
+    padding-top: 15px;
+}
+
+.titulo-seccion-general {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.grilla-tres-columnas {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta-tres-columnas {
+    flex: 1;
+}
+
+.tarjeta-tres-columnas img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.tarjeta-tres-columnas h3 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* ==========================================================================
+   VERSION MOBILE (hasta 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 80px; /* Solo header, nav oculto en mobile */
+    }
+
+    /* CARRUSEL */
+    .img-carrusel {
+        height: 350px;
+    }
+
+    .info-carrusel h1 {
+        font-size: 16px;
+    }
+
+    /* REPORTES VECINALES */
+    .grilla-reportes {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .acciones-reportes .btn-reportar-celeste {
+        display: none;
+    }
+
+    /* COLUMNAS MIXTAS */
+    .contenedor-columnas-mixtas {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 20px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .columna-noticias-izquierda {
+        display: contents !important;
+    }
+
+    .bloque-dos-noticias {
+        flex: 1 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        order: 1 !important;
+    }
+
+    .noticia-protesta-principal {
+        flex: 1.5 !important;
+        background-color: #ffffff !important;
+        order: 2 !important;
+    }
+
+    .columna-ultimas-noticias {
+        flex: 1 !important;
+        border-left: 1px solid #e0e0e0 !important;
+        padding-left: 20px !important;
+        order: 3 !important;
+    }
+
+    /* FILAS DE CUATRO Y BANNER */
+    .fila-cuatro-noticias {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tarjeta-cuadrada {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta-cuadrada img {
+        height: 180px;
+    }
+
+    .tarjeta-banner-oscuro {
+        height: 200px;
+    }
+
+    .contenido-banner-oscuro h2 {
+        font-size: 15px;
+    }
+
+    /* MÁS RECIENTES */
+    .grilla-tres-columnas {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tarjeta-tres-columnas img {
+        height: 180px;
+    }
+}
