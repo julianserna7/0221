@@ -20,22 +20,22 @@ const headerHTML = `
         <span class="linea-hamburguesa"></span>
       </button>
       <div class="info-clima-fecha">
-        <span class="ciudad-clima">La Plata <span style="display:flex;align-items:center;gap:2px;"><img src="../assets/iconos/clima.png" alt="Clima" style="width:18px;height:18px;"> <span class="temperatura">14°</span></span></span>
+        <span class="ciudad-clima">La Plata <span style="display:flex;align-items:center;gap:2px;"><img src="/assets/iconos/clima.png" alt="Clima" style="width:18px;height:18px;"> <span class="temperatura">14°</span></span></span>
         <span class="fecha-actual">Jueves, 25 de junio de 2026</span>
       </div>
     </div>
     <div class="header-centro">
-      <img src="../assets/marcas/0221-blanco.svg" alt="Logo 0221" class="logo-sitio">
+      <img src="/assets/marcas/0221-blanco.svg" alt="Logo 0221" class="logo-sitio">
     </div>
     <div class="header-der">
       <a href="#" class="btn-ingresar">
         <span class="texto-ingresar">Ingresar</span>
-        <img src="../assets/iconos/icon.png" alt="Usuario" class="icono-usuario-mobile">
+        <img src="/assets/iconos/icon.png" alt="Usuario" class="icono-usuario-mobile">
       </a>
       <a href="#" class="btn-reportar-top">
         <span class="texto-reportar">Reportar hecho</span>
-        <img src="../assets/iconos/reportar.png" alt="Reportar" class="icono-reportar-btn">
-        <img src="../assets/iconos/reportar.png" alt="Reportar" class="icono-reportar-mobile">
+        <img src="/assets/iconos/reportar.png" alt="Reportar" class="icono-reportar-btn">
+        <img src="/assets/iconos/reportar.png" alt="Reportar" class="icono-reportar-mobile">
       </a>
     </div>
   </div>
@@ -43,14 +43,14 @@ const headerHTML = `
 
 const navHTML = `
   <ul>
-    <li><a href="secciones/gran-la-plata.html">Gran La Plata</a></li>
-    <li><a href="secciones/policiales.html">Policiales</a></li>
-    <li><a href="secciones/nacional.html">Nacional</a></li>
-    <li><a href="secciones/universidad.html">Universidad</a></li>
-    <li><a href="secciones/deportes.html">Deportes</a></li>
-    <li><a href="secciones/internacional.html">Internacional</a></li>
-    <li><a href="secciones/entretenimiento.html">Entretenimiento</a></li>
-    <li><a href="secciones/reportes.html">Reportes</a></li>
+    <li><a href="/secciones/gran-la-plata.html">Gran La Plata</a></li>
+    <li><a href="/secciones/policiales.html">Policiales</a></li>
+    <li><a href="/secciones/nacional.html">Nacional</a></li>
+    <li><a href="/secciones/universidad.html">Universidad</a></li>
+    <li><a href="/secciones/deportes.html">Deportes</a></li>
+    <li><a href="/secciones/internacional.html">Internacional</a></li>
+    <li><a href="/secciones/entretenimiento.html">Entretenimiento</a></li>
+    <li><a href="/secciones/reportes.html">Reportes</a></li>
   </ul>
 `;
 
@@ -61,13 +61,13 @@ const footerHTML = `
   <div class="footer-bloque-superior">
 
     <div class="footer-marca-redes">
-      <img src="../assets/marcas/0221-blanco.svg" alt="Logo 0221 Footer" class="logo-footer">
+      <img src="/assets/marcas/0221-blanco.svg" alt="Logo 0221 Footer" class="logo-footer">
       <div class="iconos-redes">
-        <a href="#"><img src="../assets/iconos/Instagram.png" alt="Instagram"></a>
-        <a href="#"><img src="../assets/iconos/Facebook.png" alt="Facebook"></a>
-        <a href="#"><img src="../assets/iconos/Twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="../assets/iconos/Youtube.png" alt="Youtube"></a>
-        <a href="#"><img src="../assets/iconos/LinkedIn.png" alt="LinkedIn"></a>
+        <a href="#"><img src="/assets/iconos/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="/assets/iconos/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="/assets/iconos/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="/assets/iconos/youtube.png" alt="Youtube"></a>
+        <a href="#"><img src="/assets/iconos/linkedin.png" alt="LinkedIn"></a>
       </div>
     </div>
 
@@ -76,7 +76,7 @@ const footerHTML = `
         <h4>Secciones</h4>
         <div class="sub-columnas-secciones">
           <ul>
-            <li><a href="#">Mi zona</a></li>
+            <li><a href="#">Gran La Plata</a></li>
             <li><a href="#">Policiales</a></li>
             <li><a href="#">Nacional</a></li>
             <li><a href="#">Universidad</a></li>
@@ -112,9 +112,9 @@ const footerHTML = `
   </div>
 
   <div class="footer-logos-institucionales">
-    <img src="../assets/marcas/adepa.png" alt="ADEPA" class="img-institucional">
-    <img src="../assets/marcas/aglp.png" class="img-institucional">
-    <img src="../assets/marcas/dosalcubo.png" alt="Dos al Cubo" class="img-institucional">
+    <img src="/assets/marcas/adepa.png" alt="ADEPA" class="img-institucional">
+    <img src="/assets/marcas/aglp.png" alt="AGLP" class="img-institucional">
+    <img src="/assets/marcas/dosalcubo.png" alt="Dos al Cubo" class="img-institucional">
   </div>
 
   <div class="footer-creditos">

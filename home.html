@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0221</title>
+    <!-- Importación de la tipografía Poppins en sus variantes Regular (400), Medium (500) y Bold (700) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/homes.css">
+    <script src="js/global.js" defer></script>
+</head>
+<body>
+
+    <!-- ENCABEZADO PRINCIPAL -->
+    <header id="header-principal"></header>
+    <nav id="nav-principal"></nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenedor-principal">
+
+        <!-- MARQUESINA: TEMAS DEL DÍA -->
+        <div class="marquesina-temas">
+            <div class="marquesina-contenido">
+                <span class="titulo-temas"><img src="assets/iconos/temas.png" alt="Temas del día" style="width:20px;height:20px;display:inline-block;vertical-align:middle;"> Temas del día</span>
+                <a href="#">Indio Solari</a>
+                <a href="#">Estacionamiento medido</a>
+                <a href="#">Parque Saavedra</a>
+                <a href="#">UNLP</a>
+                <a href="#">Banco Provincia</a>
+            </div>
+        </div>
+        
+        <!-- 1. BLOQUE CARRUSEL / DESTACADA (Indio Solari) -->
+        <section class="seccion-carrusel">
+            <div class="tarjeta-carrusel">
+                <img src="assets/imagenes/homes/h-indio.png" alt="Despedida de los fanáticos" class="img-carrusel">
+                <button class="flecha-carrusel flecha-izq"><img src="assets/iconos/flecha-carrusel.png" alt="Anterior"></button>
+                <button class="flecha-carrusel flecha-der"><img src="assets/iconos/flecha-carrusel.png" alt="Siguiente"></button>
+                <div class="info-carrusel">
+                    <h1><span class="destacado-azul">“Hay lugar para todos”.</span> La familia del Indio Solari destacó la emotiva despedida de los fanáticos.</h1>
+                </div>
+            </div>
+            <div class="indicadores-carrusel">
+                <span class="punto activo"></span>
+                <span class="punto"></span>
+                <span class="punto"></span>
+                <span class="punto"></span>
+            </div>
+        </section>
+
+        <!-- 2. REPORTES VECINALES (Recuadro Celeste claro) -->
+        <section class="seccion-reportes-vecinales">
+            <div class="encabezado-bloque-reportes">
+                <h2>Reportes vecinales <span class="flecha-bloque">&gt;</span></h2>
+                <div class="acciones-reportes">
+                    <a href="#" class="btn-reportar-celeste">Reportar hecho 📢</a>
+                    <a href="#" class="link-ver-mas">Ver más &gt;</a>
+                </div>
+            </div>
+            
+            <div class="grilla-reportes">
+                <!-- Reporte 1 -->
+                <article class="tarjeta-reporte">
+                    <img src="assets/imagenes/reportes/h-jornada.png" alt="Punto Joven">
+                    <div class="cuerpo-reporte">
+                        <h3><span class="etiqueta-azul">Punto joven.</span> Llega a City Bell una jornada de capacitación laboral y educación financiera</h3>
+                        <p class="autor-reporte">Reportado por <strong>Andrea Salvatierra</strong></p>
+                    </div>
+                </article>
+                <!-- Reporte 2 -->
+                <article class="tarjeta-reporte">
+                    <img src="assets/imagenes/reportes/h-gnc.png" alt="Falta de GNC">
+                    <div class="cuerpo-reporte">
+                        <h3><span class="etiqueta-azul">Video.</span> La falta de GNC en La Plata ya genera filas de varias cuadras en las estaciones de servicio</h3>
+                        <p class="autor-reporte">Reportado por <strong>Alejandro Capparelli</strong></p>
+                    </div>
+                </article>
+                <!-- Reporte 3 -->
+                <article class="tarjeta-reporte">
+                    <img src="assets/imagenes/reportes/h-hacha.png" alt="Violencia vecinal">
+                    <div class="cuerpo-reporte">
+                        <h3><span class="etiqueta-azul">Violencia vecinal.</span> Tres mujeres fueron detenidas tras una brutal pelea con un hacha en Berisso</h3>
+                        <p class="autor-reporte">Reportado de <strong>forma anónima</strong></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. SECCIÓN MIXTA: EN PARALELO EN DESKTOP, APILADOS EN MOBILE -->
+        <div class="contenedor-columnas-mixtas">
+            
+            <!-- Columna Izquierda: Dos Noticias Chicas + Protesta Grande Central -->
+            <div class="columna-noticias-izquierda">
+                
+                <div class="bloque-dos-noticias">
+                    <!-- Noticia Chica 1 -->
+                    <article class="noticia-chica-horizontal">
+                        <img src="assets/imagenes/homes/h-verdu.png" alt="Canasta alimentaria">
+                        <div class="info-noticia-chica">
+                            <h3><span class="etiqueta-azul">Informe.</span> La canasta alimentaria de La Plata aumentó 2,1% en mayo y acumuló una suba anual del 32,1%</h3>
+                        </div>
+                    </article>
+                    
+                    <!-- Noticia Chica 2 -->
+                    <article class="noticia-chica-horizontal">
+                        <img src="assets/imagenes/homes/h-investigacion.png" alt="Investigación Adorni">
+                        <div class="info-noticia-chica">
+                            <h3><span class="etiqueta-azul">Investigación en curso.</span> La fiscalía prepara requerimiento para que Adorni justifique bienes y avance la causa</h3>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- NOTICIA DESTACADA CENTRAL (Protesta) -->
+                <article class="noticia-protesta-principal">
+                    <img src="assets/imagenes/homes/h-protesta.png" alt="Protesta Parque Saavedra">
+                    <div class="cuerpo-noticia-protesta">
+                        <h2><span class="etiqueta-azul">Protesta.</span> Vecinos de Parque Saavedra marcharon contra los cambios en las calles que se harán con la remodelación</h2>
+                        <p class="bajada-noticia">La caminata se realizó este sábado para rechazar el ensanche del Parque Saavedra que implicará una reducción del tránsito y la eliminación de ramblas.</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Columna Derecha: Últimas Noticias (Lista con horas y puntos azules) -->
+            <aside class="columna-ultimas-noticias">
+                <h2 class="titulo-ultimas">Últimas noticias</h2>
+                <div class="lista-cronologica">
+                    <div class="item-cronologico">
+                        <span class="hora-noticia">20:44</span>
+                        <p>¿En qué consiste la nueva modalidad de paros que analiza la CGT para profundizar con su plan de lucha?</p>
+                    </div>
+                    <div class="item-cronologico">
+                        <span class="hora-noticia">20:34</span>
+                        <p>Alertan por una crecida del Río de la Plata cercana a los tres metros</p>
+                    </div>
+                    <div class="item-cronologico">
+                        <span class="hora-noticia">20:30</span>
+                        <p>La Provincia impulsa el Plan de Gestión del Riesgo Climático para dar respuesta a fenómenos extremos</p>
+                    </div>
+                    <div class="item-cronologico">
+                        <span class="hora-noticia">19:25</span>
+                        <p>Gimnasia homenajea a 12 socios honorarios en un nuevo reconocimiento a víctimas del terrorismo de Estado</p>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- 4. FILA DE 4 NOTICIAS CUADRADAS -->
+        <section class="fila-cuatro-noticias">
+            <article class="tarjeta-cuadrada">
+                <img src="assets/imagenes/homes/h-dario.png" alt="Darío Alfano">
+                <h3><span class="etiqueta-azul">En caída.</span> Darío Alfano, el titular del Sindicato de Trabajadores Municipales de La Plata que pierde peso político</h3>
+            </article>
+            
+            <article class="tarjeta-cuadrada">
+                <img src="assets/imagenes/homes/h-presunto.png" alt="Investigación policial">
+                <h3><span class="etiqueta-azul">Presunto robo y dos disparos.</span> Avanza la investigación por la muerte de un ladrón en manos de un policía en Tolosa</h3>
+            </article>
+            
+            <article class="tarjeta-cuadrada">
+                <img src="assets/imagenes/homes/h-paso.png" alt="Franco Colapinto">
+                <h3><span class="etiqueta-azul">Paso en falso.</span> En una carrera accidentada, Franco Colapinto no tuvo una buena performance y terminó 14°</h3>
+            </article>
+            
+            <article class="tarjeta-cuadrada">
+                <img src="assets/imagenes/policiales/h-same.png" alt="Caso SAME">
+                <h3><span class="etiqueta-azul">Confuso episodio.</span> Llegó apuñalado a la casa de su ex en La Plata y denunció que lo asaltaron</h3>
+            </article>
+        </section>
+
+        <!-- 5. BANNER GRANDE DESTACADO (Tan Biónica) -->
+        <section class="seccion-banner-ancho">
+            <div class="tarjeta-banner-oscuro">
+                <img src="assets/imagenes/homes/h-tanbionica.png" alt="Tan Biónica en La Plata" class="img-banner-fondo">
+                <div class="contenido-banner-oscuro">
+                    <h2><span class="destacado-azul">Tan Biónica.</span> Lanzó las últimas entradas para su show en La Plata, en el Estadio UNO, tras el éxito de su nuevo disco</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. OTRA FILA DE NOTICIAS SECUNDARIAS (Apiladas abajo en Mobile) -->
+        <section class="fila-cuatro-noticias">
+            <article class="tarjeta-cuadrada">
+                <img src="assets/imagenes/internacional/h-cloudflare.png" alt="Falla Cloudflare">
+                <h3><span class="etiqueta-azul">Falla en Cloudflare.</span> El motivo por el que miles de sitios de internet experimentan microcortes en todo el mundo</h3>
+            </article>
+            
+            <article class="tarjeta-cuadrada">
+                <img src="assets/imagenes/nacional/h-espert.png" alt="Espert citado">
+                <h3><span class="etiqueta-azul">Investigación.</span> José Luis Espert fue citado a indagatoria en una causa por lavado de dinero</h3>
+            </article>
+            
+            <article class="tarjeta-cuadrada">
+                <img src="assets/imagenes/entretenimiento/h-granhermano.png" alt="Gran Hermano">
+                <h3><span class="etiqueta-azul">Sorpresa.</span> Jenny Mavinga dejó la casa de Gran Hermano por decisión propia tras una crisis emocional</h3>
+            </article>
+            
+            <article class="tarjeta-cuadrada">
+                <img src="assets/imagenes/universidad/h-adulp.png" alt="Paritarias ADULP">
+                <h3><span class="etiqueta-azul">Acuerdo y polémica.</span> Las paritarias, el ajuste y un aumento aceptado por siete votos generaron reclamos en ADULP</h3>
+            </article>
+        </section>
+
+        <!-- 7. SECCIÓN MÁS RECIENTES -->
+        <section class="seccion-mas-recientes">
+            <h2 class="titulo-seccion-general">Más recientes</h2>
+            <div class="grilla-tres-columnas">
+                <article class="tarjeta-tres-columnas">
+                    <img src="assets/imagenes/homes/h-veron.png" alt="Verón y Messi">
+                    <h3><span class="etiqueta-azul">Video.</span> Gudjohnsen, la conexión inesperada que lo une a Juan Sebastián Verón y Lionel Messi</h3>
+                </article>
+                
+                <article class="tarjeta-tres-columnas">
+                    <img src="assets/imagenes/policiales/h-grave.png" alt="Atropellado Gonnet">
+                    <h3><span class="etiqueta-azul">Video.</span> Un hombre fue atropellado en Gonnet y se encuentra internado en grave estado</h3>
+                </article>
+                
+                <article class="tarjeta-tres-columnas">
+                    <img src="assets/imagenes/homes/h-messi.png" alt="Messi Entrevista">
+                    <h3><span class="etiqueta-azul">Minuto a minuto.</span> Messi habló a corazón abierto y encendió la ilusión antes del debut en el Mundial 2026</h3>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER PRINCIPAL (CON DEGRADADO) -->
+    <footer id="footer-sitio"></footer>
+
+</body>
+</html>
