@@ -1,7 +1,7 @@
 /* ==========================================================================
    RESET GENERAL Y TIPOGRAFÍA
    ========================================================================== */
-   
+
 .poppins-regular {   
     font-family: "Poppins", sans-serif;   
     font-weight: 400;   
@@ -326,6 +326,43 @@ img {
 
 .copyright {
     margin-top: 5px;
+}
+
+/* ==========================================================================
+   DROPDOWN INGRESAR
+   ========================================================================== */
+.dropdown-ingresar {
+    position: relative;
+}
+
+.dropdown-menu-ingresar {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    min-width: 160px;
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.dropdown-menu-ingresar a {
+    display: block;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    transition: background-color 0.15s;
+}
+
+.dropdown-menu-ingresar a:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown-menu-ingresar.abierto {
+    display: block;
 }
 
 /* ==========================================================================

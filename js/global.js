@@ -28,10 +28,16 @@ const headerHTML = `
       <a href="/home.html" style="text-decoration: none;"><img src="/assets/marcas/0221-blanco.svg" alt="Logo 0221" class="logo-sitio"></a>
     </div>
     <div class="header-der">
-      <a href="#" class="btn-ingresar">
-        <span class="texto-ingresar">Ingresar</span>
-        <img src="/assets/iconos/icon.png" alt="Usuario" class="icono-usuario-mobile">
-      </a>
+      <div class="dropdown-ingresar">
+        <a href="#" class="btn-ingresar" id="btn-ingresar">
+          <span class="texto-ingresar">Ingresar</span>
+          <img src="/assets/iconos/icon.png" alt="Usuario" class="icono-usuario-mobile">
+        </a>
+        <div class="dropdown-menu-ingresar" id="dropdown-ingresar">
+          <a href="/usuario/iniciar-sesion.html">Iniciar sesión</a>
+          <a href="/usuario/registro.html">Registrarme</a>
+        </div>
+      </div>
       <a href="#" class="btn-reportar-top">
         <span class="texto-reportar">Reportar hecho</span>
         <img src="/assets/iconos/reportar.png" alt="Reportar" class="icono-reportar-btn">
@@ -143,3 +149,17 @@ if (footer) {
   footer.className = 'footer-sitio';
   footer.innerHTML = footerHTML;
 }
+
+// DROPDOWN INGRESAR
+document.addEventListener('click', (e) => {
+    const btn = document.getElementById('btn-ingresar');
+    const menu = document.getElementById('dropdown-ingresar');
+    if (!btn || !menu) return;
+
+    if (btn.contains(e.target)) {
+        e.preventDefault();
+        menu.classList.toggle('abierto');
+    } else {
+        menu.classList.remove('abierto');
+    }
+});
